@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Las 3 metaetiquetas anteriores * deben * ser lo primero en la cabeza; cualquier otro contenido principal debe venir * después * de estas etiquetas -->
+    <title>Arquitectura de Computadoras</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/animate.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="icon" href="img/jett.jpg" type="image/x-icon">
+
+  
+
+</head>
+
+<body>
+  <header id="header">
+    <nav class="navbar navbar-default navbar-static-top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="divAlejovar">
+                      <a href="index.html"><h1>Alejovar</h1></a>
+                    </div>
+        </div>
+        <div class="navbar-collapse collapse">
+          <div class="menu">
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation"><a href="index.html">Inicio</a></li>
+              <li role="presentation"><a href="about.html" class="active">Prácticas</a></li>
+              <li role="presentation"><a href="services.html">Indíce</a></li>
+              <li role="presentation"><a href="gallery.html">Galeria</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--/.container-->
+    </nav>
+    <!--/nav-->
+  </header>
+  <!--/header-->
+
+  <div class="about">
+    <div class="container">
+      <div class="text-center">
+        <h2>Objetivo </h2>
+        <div class="col-md-10 col-md-offset-1">
+          <p>Realizar múltiples prácticas de arquitectura de computadoras es adquirir un profundo entendimiento de los componentes y principios fundamentales de los sistemas informáticos. A través de la práctica repetida, se busca fortalecer habilidades técnicas, prepararse para carreras en tecnología de la información y fomentar la capacidad de resolver problemas y pensar de manera creativa en el diseño y la optimización de sistemas informáticos. Este enfoque sistemático de aprendizaje permite a los estudiantes dominar conceptos clave y aplicarlos de manera efectiva en contextos prácticos, promoviendo así el desarrollo profesional y la innovación en el campo de la informática.</p>
+        </div>
+
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <div class="btn-gamp"><a href="https://www.youtube.com/watch?v=yCd3VVE_0cw">View</a></div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <div class="gamp-btn"><a href="https://playvalorant.com/es-mx/?gad_source=1&gclid=Cj0KCQjwlZixBhCoARIsAIC745DFgFLGB543G7sUvqUqSIkClqHYkAnNczo6zVZL3ToMkYGJhB2z0MQaAv3dEALw_wcB&gclsrc=aw.ds">download</a></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <hr>
+
+<!-- Contenedor del visor de PDF -->
+<div class="pdf-container">
+  <embed id="pdf-viewer" src='pdfs/Practica 1.pdf' type="application/pdf" width="100%" height="100%">
+</div>
+
+<!-- Contenedor para los botones -->
+<div class="button-container">
+  <!-- Botones para cambiar de PDF -->
+  <button class="pdf-button" onclick="cambiarPDF('pdfs/Practica 1.pdf')">Práctica 1</button>
+  <button class="pdf-button" onclick="cambiarPDF('pdfs/Practica 2.pdf')">Práctica 2</button>
+  <button class="pdf-button" onclick="cambiarPDF('pdfs/Practica 3.pdf')">Práctica 3</button>
+  <button class="pdf-button" onclick="cambiarPDF('pdfs/Practica 4.pdf')">Práctica 4</button>
+  <button class="pdf-button" onclick="cambiarPDF('pdfs/Practica 5.pdf')">Práctica 5</button>
+  <button class="pdf-button" onclick="cambiarPDF('pdfs/Procesadores.pdf')">Procesadores</button>
+  <button class="pdf-button" onclick="cambiarPDF('pdfs/Gamas.pdf')">Gamas</button>
+  <button class="pdf-button" onclick="cambiarPDF('pdfs/Diseños.pdf')">Diseños</button>
+  <button class="pdf-button" onclick="cambiarPDF('pdfs/Cotizacion.pdf')">Cotización</button>
+
+</div>
+
+<script>
+function cambiarPDF(rutaPDF) {
+  document.getElementById('pdf-viewer').src = rutaPDF;
+}
+</script>
+
+
+  <footer>
+    <div class="container">
+      <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <h4>About Us</h4>
+        <p>En las entrañas del ciberespacio, AlejovarSite emerge como un oráculo de conocimiento, donde las corrientes del código se entrelazan con la astucia digital, revelando los misterios más profundos de la tecnología.
+        </p>
+        <div class="contact-info">
+          <ul>
+            <li><i class="fa fa-home fa"></i>Calle de las Sombras Ocultas, Número 13, Barrio del Misterio Eterno, Ciudad de la Penumbra Profunda. </li>
+            <li></i> Luis OsuSaensPonystan</li>
+            <li><i class="fa fa-phone fa"></i> +52 844 307 7805</li>
+            <li><i class="fa fa-envelope fa"></i> elmasmakiabelicoluissaensponystanosu@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </footer>
+
+  <div class="sub-footer">
+    <div class="container">
+      <div class="social-icon">
+        <div class="col-md-4">
+          <ul class="social-network">
+            <li><a href="https://www.facebook.com/yosoyalvex" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/YoSoyAlvex" class="twitter tool-tip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/yosoyalvex/" class="instagram tool-tip" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/c/YoSoyAlvex" class="ytube tool-tip" title="You Tube"><i class="fa fa-youtube-play"></i></a></li>
+            <li><a href="#" class="twitch tool-tip" title="Twitch"><i class="fa fa-twitch"></i></a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-md-offset-4">
+        <div class="copyright">
+          &copy; YoSoyAlvex. All Rights Reserved.
+          <div class="credits">
+        
+            <a href="https://www.youtube.com/c/YoSoyAlvex">YoSoyAlvex</a> by <a href="https://www.youtube.com/c/YoSoyAlvex">YoSoyAlvex</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    wow = new WOW({}).init();
+  </script>
+
+</body>
+
+</html>

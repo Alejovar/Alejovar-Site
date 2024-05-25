@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Las 3 metaetiquetas anteriores * deben * ser lo primero en la cabeza; cualquier otro contenido principal debe venir * después * de estas etiquetas -->
+    <title>Arquitectura de Computadoras</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/animate.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="icon" href="img/jett.jpg" type="image/x-icon">
+
+</head>
+
+<body>
+  <header id="header">
+    <nav class="navbar navbar-default navbar-static-top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+            <div class="divAlejovar">
+              <a href="index.html"><h1>Alejovar</h1></a>
+            </div>         
+           </div>
+        <div class="navbar-collapse collapse">
+          <div class="menu">
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation"><a href="index.html">Inicio</a></li>
+              <li role="presentation"><a href="about.html">Prácticas</a></li>
+              <li role="presentation"><a href="services.html"class="active">Indíce</a></li>
+              <li role="presentation"><a href="gallery.html">Galeria</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--/.container-->
+    </nav>
+    <!--/nav-->
+  </header>
+  <!--/header-->
+
+  <div class="services">
+    <div class="container">
+        <div class="text-center">
+            <h2>Unidades</h2>
+            <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <div class="service-item" data-service="responsive">
+                    <i class="fa fa-heart-o"></i>
+                    <h3>Unidad 1</h3>
+                    <p>La Unidad 1 "Modelos de Arquitectura de Computación" introduce los principios fundamentales detrás del diseño y funcionamiento de las computadoras. Desde la arquitectura clásica de von Neumann hasta las más modernas y especializadas, se exploran conceptos como la jerarquía de memoria, las arquitecturas RISC vs. CISC y los sistemas paralelos. Los estudiantes obtienen una comprensión sólida de cómo interactúan los componentes clave, como la CPU, la memoria y los dispositivos de entrada/salida, para ejecutar programas y procesar datos, sentando las bases para el estudio avanzado de la informática y la ingeniería de sistemas.</p>
+                </div>
+            </div>
+            <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                <div class="service-item" data-service="retina">
+                    <i class="fa fa-cloud"></i>
+                    <h3>Unidad 2</h3>
+                    <p>La Unidad 2 "Organización y Estructura de un Procesador" explora en detalle cómo están organizados y diseñados los procesadores para ejecutar instrucciones y realizar operaciones. Desde la arquitectura de la unidad de control hasta la ejecución de instrucciones en la unidad de ejecución, los estudiantes examinan cómo se procesan y manipulan los datos dentro del procesador. Se estudian temas como la pipeline, la caché, las unidades funcionales y los métodos de predicción de ramas, proporcionando una comprensión profunda de cómo funciona internamente un procesador y cómo estas estructuras impactan en su rendimiento y eficiencia.</p>
+                </div>
+            </div>
+            <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
+                <div class="service-item" data-service="clean">
+                    <i class="fa fa-book"></i>
+                    <h3>Unidad 3</h3>
+                    <p>La Unidad 3 "Chipset y Aplicaciones" se sumerge en el papel fundamental que desempeñan los chipsets en el funcionamiento de una computadora. Los estudiantes exploran cómo los chipsets actúan como interfaz entre el procesador, la memoria, los dispositivos de entrada/salida y otros componentes del sistema, coordinando y gestionando eficientemente el flujo de datos. Además, se analizan aplicaciones específicas de los chipsets en diferentes contextos, como en sistemas embebidos, servidores, dispositivos móviles y computación de alto rendimiento, brindando una comprensión amplia de su importancia y diversidad de usos en el panorama tecnológico actual.</p>
+                </div>
+            </div>
+            <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms">
+                <div class="service-item" data-service="customize">
+                    <i class="fa fa-gear"></i>
+                    <h3>Unidad 4</h3>
+                    <p>La Unidad 4 "Aspectos Básicos de la Computación Paralela" se adentra en los fundamentos esenciales de cómo se diseñan y desarrollan sistemas informáticos que ejecutan tareas en paralelo. Desde la comprensión de los conceptos básicos de la programación paralela hasta la exploración de arquitecturas de hardware dedicadas, los estudiantes examinan cómo se pueden distribuir las cargas de trabajo para lograr un procesamiento más rápido y eficiente. Se estudian técnicas como el procesamiento en paralelo a nivel de instrucción y a nivel de datos, así como también se analizan los desafíos y las soluciones para garantizar la sincronización y la coherencia de los datos en entornos paralelos. Esta unidad proporciona una base sólida para comprender y aplicar los principios de la computación paralela en una variedad de contextos y aplicaciones.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="ventana-emergente-container">
+    <div class="ventana-emergente" id="responsiveVentanaEmergente">
+        <div class="contenido-ventana">
+          <h1>Modelos de arquitectura de computo</h1>
+
+          <h3><a href="#clasicas">1.1 Clásicas</a></h3>
+
+          <h3><a href="#segmentadas">1.2 Segmentadas</a></h3>
+                    
+          <h3><a href="#multiprocesamiento">1.3 De multiprocesamiento</a></h3>
+                    
+          <h3><a href="#analisis_componentes">1.2 Análisis de los componentes</a></h3>
+                    
+          <h3><a href="#arquitecturas">1.2.1 Arquitecturas</a></h3>
+                    
+          <h3><a href="#ucp">1.2.1.1 Unidad Central de Procesamiento</a></h3>
+                    
+          <h3><a href="#ual">1.2.1.2 Unidad Aritmética Lógica</a></h3>
+                    
+          <h3><a href="#registros">1.2.1.3 Registros</a></h3>
+                    
+          <h3><a href="#buses_arq">1.2.1.4 Buses</a></h3>
+                    
+          <h3><a href="#memoria">1.2.2 Memoria</a></h3>
+                    
+          <h3><a href="#conceptos_memoria">1.2.2.1 Conceptos básicos del manejo de la memoria</a></h3>
+                    
+          <h3><a href="#memoria_principal">1.2.2.2 Memoria principal</a></h3>
+                    
+          <h3><a href="#cache_memoria">1.2.2.3 Memoria caché</a></h3>
+                    
+          <h3><a href="#entrada_salida">1.2.3 Manejo de la entrada/salida</a></h3>
+                    
+          <h3><a href="#modulos">1.2.3.1 Módulos de entrada/salida</a></h3>
+                    
+          <h3><a href="#programada">1.2.3.2 Entrada/Salida programada</a></h3>
+                    
+          <h3><a href="#interrupciones_es">1.2.3.3 Entrada/Salida mediante interrupciones</a></h3>
+                    
+          <h3><a href="#acceso_directo">1.2.3.4 Acceso directo a memoria</a></h3>
+                    
+          <h3><a href="#canales">1.2.3.5 Canales y procesadores de entrada/salida</a></h3>
+                    
+          <h3><a href="#buses_comp">1.2.4 Buses</a></h3>
+                    
+          <h3><a href="#tipos_buses">1.2.4.1 Tipos de buses</a></h3>
+                    
+          <h3><a href="#estructura_buses">1.2.4.2 Estructura de los buses</a></h3>
+                    
+          <h3><a href="#jerarquias_buses">1.2.4.3 Jerarquías de buses</a></h3>
+                    
+          <h3><a href="#interrupciones">1.2.5 Interrupciones</a></h3>
+          
+
+    <!-- Contenido de las secciones -->
+
+    <h2 id="clasicas">1.1 Clásicas</h2>
+<p>Las arquitecturas clásicas de sistemas informáticos se refieren a los diseños tradicionales que han sentado las bases de la computación moderna. Estas arquitecturas incluyen modelos como la arquitectura Von Neumann, que se caracteriza por tener una unidad central de procesamiento (CPU), memoria y dispositivos de entrada/salida interconectados a través de un bus de datos común. En la arquitectura Von Neumann, tanto los datos como las instrucciones de programación se almacenan en la misma memoria, lo que permite la ejecución secuencial de instrucciones.</p>
+<p>Otra arquitectura clásica es la Harvard, que diferencia entre memoria de datos y memoria de instrucciones, permitiendo accesos simultáneos y, por ende, una mayor eficiencia en algunos contextos. Las arquitecturas clásicas también incluyen los sistemas basados en microprocesadores de una sola unidad, que han evolucionado desde los primeros días de la computación hasta las versiones avanzadas que vemos hoy en día en computadoras personales y servidores.</p>
+
+<h2 id="segmentadas">1.2 Segmentadas</h2>
+<p>Las arquitecturas segmentadas dividen la memoria en segmentos lógicos que pueden variar en tamaño y pueden ser gestionados de manera independiente. Este diseño permite una mayor flexibilidad en la asignación y gestión de la memoria, facilitando la implementación de técnicas de protección y compartición de memoria entre diferentes procesos. Los segmentos pueden representar diferentes tipos de datos o código, como segmentos de pila, datos o código de programa.</p>
+<p>La segmentación también se utiliza para mejorar la eficiencia y la seguridad en sistemas operativos y aplicaciones de gran escala. En combinación con técnicas de paginación, la segmentación permite que los sistemas operativos gestionen la memoria de manera más efectiva, evitando problemas como la fragmentación externa y proporcionando mecanismos de protección entre diferentes procesos en ejecución.</p>
+
+<h2 id="multiprocesamiento">1.3 De multiprocesamiento</h2>
+<p>Las arquitecturas de multiprocesamiento se caracterizan por el uso de múltiples unidades de procesamiento que operan en paralelo para ejecutar tareas simultáneamente. Estas arquitecturas pueden clasificarse en sistemas de multiprocesamiento simétrico (SMP) y sistemas de multiprocesamiento asimétrico (AMP). En SMP, todos los procesadores comparten la misma memoria y tienen igual acceso a los recursos del sistema, mientras que en AMP, los procesadores pueden tener roles específicos y acceso diferenciado a la memoria.</p>
+<p>El multiprocesamiento mejora significativamente el rendimiento de los sistemas informáticos, permitiendo la ejecución concurrente de procesos y la distribución de la carga de trabajo. Esta arquitectura es común en servidores, supercomputadoras y aplicaciones que requieren un alto rendimiento computacional, como la simulación científica y el procesamiento de datos a gran escala.</p>
+
+<h2 id="analisis_componentes">1.4 Análisis de los componentes</h2>
+<p>El análisis de los componentes en arquitecturas de sistemas informáticos implica el estudio detallado de cada uno de los elementos que conforman el sistema, incluyendo la CPU, memoria, dispositivos de almacenamiento, y dispositivos de entrada/salida. Este análisis es crucial para entender cómo interactúan estos componentes y cómo pueden ser optimizados para mejorar el rendimiento general del sistema.</p>
+<p>El análisis también incluye la evaluación de la eficiencia energética, la capacidad de expansión y la compatibilidad con diferentes tipos de software. A través de este proceso, los diseñadores de sistemas pueden identificar cuellos de botella y oportunidades de mejora, asegurando que el sistema cumpla con los requisitos de rendimiento y funcionalidad esperados.</p>
+
+<h3 id="arquitecturas">1.4.1 Arquitecturas</h3>
+<p>Las arquitecturas de sistemas informáticos pueden variar ampliamente en función de su diseño y propósito. Algunas de las arquitecturas más comunes incluyen la arquitectura Von Neumann, Harvard, RISC (Reduced Instruction Set Computer) y CISC (Complex Instruction Set Computer). Cada una de estas arquitecturas tiene sus propias ventajas y desventajas, dependiendo del contexto de su aplicación.</p>
+<p>La arquitectura RISC, por ejemplo, se caracteriza por un conjunto reducido de instrucciones que pueden ejecutarse rápidamente, lo que facilita la optimización del rendimiento y la eficiencia energética. Por otro lado, la arquitectura CISC utiliza un conjunto más amplio de instrucciones, permitiendo que operaciones complejas se realicen con menos líneas de código, aunque a costa de una mayor complejidad en el diseño del hardware.</p>
+<p>El análisis de arquitecturas también considera aspectos como la paralelización, la latencia y el ancho de banda de los buses de datos, y la capacidad de integración con otros sistemas y tecnologías emergentes. Este conocimiento es esencial para el desarrollo de sistemas informáticos avanzados que puedan satisfacer las crecientes demandas de procesamiento de datos y eficiencia energética en la era digital.</p>
+
+<h4 id="ucp">1.2.1.1 Unidad Central de Procesamiento</h4>
+<p>La Unidad Central de Procesamiento (CPU) es el componente principal de un sistema informático responsable de ejecutar instrucciones y procesar datos. La CPU se compone de varios subcomponentes clave, incluyendo la unidad de control, la unidad aritmética y lógica (UAL), y registros internos. La unidad de control dirige las operaciones del procesador y gestiona el flujo de datos entre la CPU, la memoria y los dispositivos periféricos. La CPU sigue el ciclo de instrucción, que incluye la búsqueda, decodificación, ejecución y almacenamiento de resultados, permitiendo que los programas se ejecuten de manera eficiente.</p>
+
+<h4 id="ual">1.2.1.2 Unidad Aritmética Lógica</h4>
+<p>La Unidad Aritmética Lógica (UAL) es un componente crucial de la CPU que realiza operaciones aritméticas (como suma, resta, multiplicación y división) y lógicas (como AND, OR, NOT y XOR). La UAL recibe instrucciones de la unidad de control y utiliza datos almacenados en registros para ejecutar las operaciones requeridas. La eficiencia y velocidad de la UAL son fundamentales para el rendimiento general de la CPU, ya que muchas operaciones computacionales dependen de cálculos rápidos y precisos.</p>
+
+<h4 id="registros">1.2.1.3 Registros</h4>
+<p>Los registros son pequeñas unidades de almacenamiento de alta velocidad ubicadas dentro de la CPU. Se utilizan para almacenar temporalmente datos e instrucciones que están siendo procesados. Los registros permiten un acceso rápido a datos críticos, mejorando la eficiencia de la CPU. Existen varios tipos de registros, incluyendo registros de datos, registros de direcciones y registros de propósito general. La gestión eficiente de los registros es esencial para el rendimiento del sistema, ya que minimiza el tiempo que la CPU pasa accediendo a la memoria principal.</p>
+
+<h4 id="buses_arq">1.2.1.4 Buses</h4>
+<p>Los buses son vías de comunicación que conectan los diferentes componentes de un sistema informático, permitiendo el intercambio de datos entre la CPU, la memoria y los dispositivos periféricos. Existen varios tipos de buses, como el bus de datos, el bus de direcciones y el bus de control. El bus de datos transporta la información que se está procesando, el bus de direcciones indica dónde se deben enviar o buscar los datos en la memoria, y el bus de control coordina las operaciones de lectura y escritura. La capacidad y velocidad de los buses influyen directamente en el rendimiento global del sistema.</p>
+
+<h3 id="memoria">1.2.2 Memoria</h3>
+<p>La memoria en un sistema informático se refiere a los componentes que almacenan datos y programas de manera temporal o permanente. Existen varios tipos de memoria, incluyendo la memoria primaria (RAM) y la memoria secundaria (discos duros, SSDs). La memoria RAM es volátil y se utiliza para almacenar datos e instrucciones que están siendo utilizados activamente por la CPU. La memoria secundaria es no volátil y se utiliza para el almacenamiento a largo plazo de datos y programas. La gestión eficiente de la memoria es crucial para el rendimiento del sistema, ya que afecta la velocidad de acceso a los datos y la capacidad de multitarea del sistema.</p>
+
+<h4 id="conceptos_memoria">1.2.2.1 Conceptos básicos del manejo de la memoria</h4>
+<p>El manejo de la memoria en los sistemas informáticos se refiere a cómo se gestionan y organizan los recursos de memoria para optimizar el rendimiento y la eficiencia. Conceptos clave incluyen la asignación de memoria, que puede ser estática o dinámica, y la liberación de memoria, que es crucial para evitar fugas de memoria. La fragmentación, tanto interna como externa, es otro aspecto importante a considerar, ya que puede afectar la eficiencia del uso de la memoria disponible. Además, se utilizan técnicas como la paginación y la segmentación para gestionar de manera eficaz grandes espacios de memoria y proteger los datos de cada proceso.</p>
+
+<h4 id="memoria_principal">1.2.2.2 Memoria principal</h4>
+<p>La memoria principal, también conocida como RAM (Random Access Memory), es un tipo de memoria volátil que se utiliza para almacenar datos e instrucciones que la CPU necesita de manera inmediata. La RAM permite un acceso rápido y directo a los datos, lo que es esencial para el rendimiento del sistema. Cuando un programa se ejecuta, sus datos e instrucciones se cargan en la memoria principal desde el almacenamiento secundario para una rápida recuperación y procesamiento. La capacidad y velocidad de la memoria principal son factores críticos que afectan la capacidad del sistema para manejar múltiples tareas simultáneamente.</p>
+
+<h4 id="cache_memoria">1.2.2.3 Memoria caché</h4>
+<p>La memoria caché es una forma de memoria de alta velocidad que se utiliza
+
+para almacenar temporalmente datos y instrucciones que se utilizan con frecuencia, con el fin de acelerar el acceso a estos por parte de la CPU. La memoria caché se encuentra entre la CPU y la memoria principal (RAM) y actúa como un intermediario que guarda copias de los datos más solicitados. Existen varios niveles de caché (L1, L2, L3), donde L1 es la más rápida y pequeña, y L3 es la más grande y lenta en comparación. El uso eficiente de la memoria caché es crucial para mejorar el rendimiento general del sistema, ya que reduce el tiempo que la CPU necesita para acceder a datos repetidamente.</p>
+
+<h3 id="entrada_salida">1.2.3 Manejo de la entrada/salida</h3>
+<p>El manejo de entrada/salida (E/S) en un sistema informático se refiere a cómo se gestionan las operaciones de comunicación entre la CPU y los dispositivos periféricos, como teclados, discos duros, impresoras y redes. La eficiencia en la gestión de E/S es vital para el rendimiento global del sistema, ya que las operaciones de E/S suelen ser más lentas en comparación con las operaciones de la CPU y la memoria. Las estrategias para mejorar el manejo de E/S incluyen el uso de módulos de E/S, técnicas de E/S programada, interrupciones y acceso directo a memoria (DMA).</p>
+
+<h4 id="modulos">1.2.3.1 Módulos de entrada/salida</h4>
+<p>Los módulos de entrada/salida son componentes dedicados que facilitan la comunicación entre la CPU y los dispositivos periféricos. Estos módulos gestionan las transferencias de datos y permiten que la CPU se libere de la gestión directa de las operaciones de E/S. Cada módulo de E/S puede controlar uno o más dispositivos y suele incluir registradores de control, de estado y de datos para manejar las operaciones y el estado del dispositivo conectado.</p>
+
+<h4 id="programada">1.2.3.2 Entrada/Salida programada</h4>
+<p>La entrada/salida programada es una técnica donde la CPU ejecuta instrucciones específicas para controlar las operaciones de E/S. En este método, la CPU espera a que las operaciones de E/S se completen antes de continuar con otras tareas, lo que puede causar ineficiencias y tiempos de espera. Aunque es simple de implementar, la E/S programada no es adecuada para aplicaciones que requieren un alto rendimiento debido al tiempo que la CPU pasa esperando a los dispositivos periféricos.</p>
+
+<h4 id="interrupciones_es">1.2.3.3 Entrada/Salida mediante interrupciones</h4>
+<p>La entrada/salida mediante interrupciones es un método más eficiente en el que los dispositivos periféricos envían señales de interrupción a la CPU cuando están listos para realizar operaciones de E/S. Esto permite que la CPU continúe con otras tareas mientras espera que los dispositivos periféricos completen sus operaciones. Cuando se recibe una interrupción, la CPU pausa su tarea actual, atiende la solicitud de E/S y luego reanuda la tarea interrumpida. Este enfoque mejora significativamente la eficiencia del sistema en comparación con la E/S programada.</p>
+
+<h4 id="acceso_directo">1.2.3.4 Acceso directo a memoria</h4>
+<p>El acceso directo a memoria (DMA) es una técnica avanzada que permite a los dispositivos periféricos transferir datos directamente a la memoria principal sin la intervención continua de la CPU. Un controlador DMA gestiona estas transferencias, liberando a la CPU para realizar otras tareas mientras la transferencia de datos se lleva a cabo en segundo plano. El DMA es especialmente útil en aplicaciones que requieren transferencias de datos rápidas y grandes, como la transferencia de archivos y el streaming de video, ya que reduce la carga de trabajo de la CPU y mejora el rendimiento general del sistema.</p>
+
+<h4 id="canales">1.2.3.5 Canales y procesadores de entrada/salida</h4>
+<p>Los canales y procesadores de entrada/salida son componentes que mejoran la eficiencia de las operaciones de E/S al manejar de manera independiente las transferencias de datos entre los dispositivos periféricos y la memoria principal. Los canales de E/S actúan como intermediarios dedicados que pueden ejecutar comandos de E/S sin la intervención constante de la CPU, permitiendo que esta se concentre en otras tareas. Los procesadores de E/S, por su parte, son unidades especializadas que pueden realizar funciones complejas de control de E/S, como la conversión de formatos de datos y la gestión de errores, liberando aún más la carga de trabajo de la CPU.</p>
+
+<h3 id="buses_comp">1.2.4 Buses</h3>
+<p>Los buses en los sistemas informáticos son vías de comunicación que permiten la transferencia de datos entre los diferentes componentes del sistema, como la CPU, la memoria y los dispositivos periféricos. Los buses juegan un papel crucial en la arquitectura del sistema, ya que determinan la velocidad y la eficiencia con la que se pueden realizar las transferencias de datos. Los buses se componen de líneas de datos, líneas de direcciones y líneas de control, cada una de las cuales tiene una función específica en la comunicación entre componentes.</p>
+
+<h4 id="tipos_buses">1.2.4.1 Tipos de buses</h4>
+<p>Existen varios tipos de buses en los sistemas informáticos, cada uno diseñado para cumplir con diferentes necesidades de comunicación. Los buses más comunes incluyen el bus de datos, que transporta la información que se procesa; el bus de direcciones, que especifica las ubicaciones de memoria de donde se deben leer o escribir los datos; y el bus de control, que coordina las operaciones y regula el flujo de datos en el sistema. Otros buses específicos incluyen el bus PCI (Peripheral Component Interconnect), utilizado para conectar dispositivos de alta velocidad como tarjetas gráficas, y el bus USB (Universal Serial Bus), empleado para conectar periféricos externos como teclados y discos duros.</p>
+
+<h4 id="estructura_buses">1.2.4.2 Estructura de los buses</h4>
+<p>La estructura de los buses se refiere a la organización y disposición física de las líneas de comunicación dentro del sistema. Un bus típico consta de múltiples líneas paralelas que transportan datos, direcciones y señales de control. La estructura puede ser un bus único, donde todas las líneas están agrupadas, o una estructura de bus dividido, donde diferentes grupos de líneas manejan funciones específicas. La arquitectura de bus puede influir en el rendimiento del sistema, ya que una disposición eficiente puede reducir los tiempos de acceso y aumentar la velocidad de transferencia de datos.</p>
+
+<h4 id="jerarquias_buses">1.2.4.3 Jerarquías de buses</h4>
+<p>Las jerarquías de buses se utilizan para organizar múltiples buses dentro de un sistema, permitiendo una gestión eficiente del tráfico de datos. En una jerarquía típica, el bus de sistema conecta la CPU con la memoria principal y los buses secundarios o periféricos, como el bus PCI, que se encargan de conectar dispositivos de entrada/salida. Esta organización jerárquica ayuda a distribuir la carga de trabajo y a prevenir cuellos de botella, mejorando el rendimiento general del sistema. La jerarquía también facilita la escalabilidad, permitiendo agregar o actualizar componentes sin afectar significativamente el resto del sistema.</p>
+
+<h3 id="interrupciones">1.2.5 Interrupciones</h3>
+<p>Las interrupciones son señales enviadas a la CPU para alertarla de eventos que requieren su atención inmediata. Las interrupciones pueden ser generadas por dispositivos de hardware, como teclados o discos duros, o por condiciones de software, como errores de ejecución. Cuando se recibe una interrupción, la CPU detiene temporalmente su tarea actual para atender la solicitud de interrupción, ejecutando una rutina de servicio de interrupción (ISR) que maneja el evento. Las interrupciones permiten una respuesta rápida y eficiente a eventos críticos, mejorando la interacción del sistema con el entorno y la gestión de recursos en tiempo real.</p>
+
+          <button class="close-button">Cerrar</button>
+        </div>
+    </div>
+</div>
+
+<div class="ventana-emergente-container">
+    <div class="ventana-emergente" id="retinaVentanaEmergente">
+        <div class="contenido-ventana">
+          <h1>Organización y estructura del procesador</h1>
+
+          <h3><a href="#organizacion_procesador">2.1 Organización del procesador</a></h3>
+
+          <h3><a href="#estructura_registros">2.2 Estructura de registros</a></h3>
+          
+          <h3><a href="#registros_usuario">2.2.1 Registros visibles para el usuario</a></h3>
+          
+          <h3><a href="#registros_control_estado">2.2.2 Registros de control y de estados</a></h3>
+          
+          <h3><a href="#ejemplos_registros_cpu">2.2.3 Ejemplos de registros de CPU reales</a></h3>
+          
+          <h3><a href="#ciclo_instruccion">2.3 El ciclo de instrucción</a></h3>
+          
+          <h3><a href="#fetch_decode_execute">2.3.1 Ciclo Fetch-Decode-Execute</a></h3>
+          
+          <h3><a href="#segmentacion_instrucciones">2.3.2 Segmentación de instrucciones</a></h3>
+          
+          <h3><a href="#conjunto_instrucciones">2.3.3 Conjunto de instrucciones, Características y funciones</a></h3>
+          
+          <h3><a href="#modos_direccionamiento">2.3.4 Modos de direccionamiento</a></h3>
+          
+          <h3><a href="#casos_estudio_cpu">2.4 Casos de estudio de CPU reales</a></h3>
+    <!-- Contenido de las secciones -->
+
+    <h2 id="organizacion_procesador">2.1 Organización del procesador</h2>
+    <p>La organización del procesador se refiere a la manera en que sus componentes internos están estructurados y cómo interactúan entre sí para ejecutar instrucciones.</p>
+    <p>En esta sección, se exploran aspectos como la arquitectura de la CPU, la unidad de control, la unidad aritmético-lógica (ALU), entre otros.</p>
+    <p>Se analizan también los diferentes tipos de arquitecturas de procesadores, como RISC (Reduced Instruction Set Computing) y CISC (Complex Instruction Set Computing).</p>
+    <p>Además, se abordan conceptos fundamentales como el flujo de datos y control en la ejecución de instrucciones dentro del procesador.</p>
+    
+    <h2 id="estructura_registros">2.2 Estructura de registros</h2>
+    <p>La estructura de registros de una CPU es esencial para su funcionamiento, ya que los registros son áreas de almacenamiento interno de alta velocidad.</p>
+    <p>En esta sección, se examina cómo se organizan y utilizan los registros en la CPU, incluyendo los registros visibles para el usuario y los registros de control y estado.</p>
+    <p>Los registros de propósito general (GPR) son comunes en muchas arquitecturas de CPU y se utilizan para almacenar datos temporales durante la ejecución de instrucciones.</p>
+    <p>Además, se analizan ejemplos de registros de CPU reales, como los registros de propósito general, registros de segmento, registros de índice, entre otros.</p>
+    
+    <h3 id="registros_usuario">2.2.1 Registros visibles para el usuario</h3>
+    <p>Los registros visibles para el usuario son aquellos que pueden ser accedidos directamente por el programador al escribir código en lenguaje ensamblador o de nivel más alto.</p>
+    <p>Estos registros suelen incluir registros de propósito general, registros de segmento, registro de puntero de pila (stack pointer), registro de base (base pointer), entre otros.</p>
+    <p>Su función principal es facilitar la manipulación de datos y direcciones de memoria durante la ejecución de programas.</p>
+    
+    <h3 id="registros_control_estado">2.2.2 Registros de control y de estados</h3>
+    <p>Los registros de control y de estados son cruciales para el funcionamiento interno de la CPU, ya que controlan su estado y el flujo de ejecución de instrucciones.</p>
+    <p>Estos registros incluyen el contador de programa (program counter), el registro de estado (status register), registros de interrupción, registros de modo de operación, entre otros.</p>
+    <p>Permiten gestionar aspectos como el modo de operación de la CPU (usuario/kernel), habilitar o deshabilitar interrupciones, y almacenar información sobre el estado de la ejecución actual.</p>
+    
+    <h3 id="ejemplos_registros_cpu">2.2.3 Ejemplos de registros de CPU reales</h3>
+    <p>Los ejemplos de registros de CPU reales proporcionan una visión práctica de cómo se implementan los registros en diferentes arquitecturas de procesadores.</p>
+    <p>Entre los ejemplos más comunes se encuentran los registros de propósito general como EAX, EBX, ECX, EDX en arquitecturas x86, y registros especiales como el registro de estado PSW (Program Status Word) en arquitecturas ARM.</p>
+    <p>Estos registros varían en función de la arquitectura de la CPU y su conjunto de instrucciones, pero comparten la función básica de almacenar datos temporales y controlar el flujo de ejecución.</p>
+    
+    <h2 id="ciclo_instruccion">2.3 El ciclo de instrucción</h2>
+    <p>El ciclo de instrucción es el proceso mediante el cual una CPU ejecuta una instrucción, desde su obtención en memoria hasta su completa ejecución.</p>
+    <p>En esta sección, se examinan diferentes aspectos del ciclo de instrucción, incluyendo el ciclo Fetch-Decode-Execute, la segmentación de instrucciones, el conjunto de instrucciones y los modos de direccionamiento.</p>
+    <p>Comprender el ciclo de instrucción es fundamental para optimizar el rendimiento y la eficiencia de un procesador.</p>
+    
+    <h3 id="fetch_decode_execute">2.3.1 Ciclo Fetch-Decode-Execute</h3>
+    <p>El ciclo Fetch-Decode-Execute es el ciclo básico de funcionamiento de una CPU, donde se obtiene la instrucción desde la memoria, se decodifica y finalmente se ejecuta.</p>
+    <p>En la etapa de Fetch, la CPU obtiene la siguiente instrucción desde la memoria principal y la carga en el registro de instrucción.</p>
+    <p>En la etapa de Decode, la instrucción es decodificada para determinar qué operación realizar y qué datos utilizar.</p>
+    <p>Finalmente, en la etapa de Execute, la CPU ejecuta la instrucción, realizando la operación deseada y actualizando los registros y la memoria según sea necesario.</p>
+    
+    <h3 id="segmentacion_instrucciones">2.3.2 Segmentación de instrucciones</h3>
+    <p>La segmentación de instrucciones es una técnica utilizada para mejorar el rendimiento de la ejecución de instrucciones al dividir el ciclo de instrucción en etapas más pequeñas y paralelas.</p>
+    <p>Estas etapas pueden incluir la búsqueda de la instrucción, la decodificación de la instrucción, la ejecución de la instrucción y el almacenamiento de los resultados.</p>
+    <p>La segmentación permite que varias instrucciones se ejecuten simultáneamente, lo que aumenta la velocidad de procesamiento y la eficiencia del procesador.</p>
+    
+    <h3 id="conjunto_instrucciones">2.3.3 Conjunto de instrucciones, Características y funciones</h3>
+    <p>El conjunto de instrucciones de una CPU define las operaciones que puede realizar y los formatos en los que se deben escribir las instrucciones.</p>
+    <p>Las características y funciones del conjunto de instrucciones varían según la arquitectura de la CPU, e incluyen operaciones aritméticas, lógicas, de transferencia de datos y de control de flujo.</p>
+    <p>El conjunto de instrucciones determina la versatilidad y capacidad de la CPU para ejecutar diferentes tipos de programas y algoritmos.</p>
+    <h3 id="modos_direccionamiento">2.3.4 Modos de direccionamiento</h3>
+<p>Los modos de direccionamiento especifican cómo se calcula la dirección de memoria de los operandos de una instrucción.</p>
+<p>Existen diferentes modos de direccionamiento utilizados por los procesadores para acceder a datos y operandos durante la ejecución de instrucciones.</p>
+<p>Algunos de los modos de direccionamiento más comunes incluyen el direccionamiento directo, el direccionamiento indirecto, el direccionamiento indexado, el direccionamiento basado en registro, entre otros.</p>
+<p>Cada modo de direccionamiento tiene sus propias ventajas y aplicaciones específicas en la programación y optimización de código assembly y de lenguajes de alto nivel.</p>
+
+<h2 id="casos_estudio_cpu">2.4 Casos de estudio de CPU reales</h2>
+<p>En la sección de casos de estudio de CPU reales, se examinan ejemplos concretos de procesadores existentes en el mercado y se analizan sus características, rendimiento y arquitectura.</p>
+<p>Estos casos de estudio proporcionan una comprensión más profunda de cómo se aplican los conceptos teóricos de organización del procesador, estructura de registros, ciclo de instrucción y modos de direccionamiento en la práctica.</p>
+<p>Se pueden explorar procesadores de diferentes fabricantes, como Intel, AMD, ARM, y se pueden comparar sus diseños y características para entender las tendencias en la industria de los procesadores.</p>
+<p>Además, se pueden estudiar casos de uso específicos donde ciertos procesadores destacan en aplicaciones como gaming, servidores, inteligencia artificial, entre otros.</p>
+
+          <button class="close-button">Cerrar</button>
+        </div>
+    </div>
+</div>
+
+<div class="ventana-emergente-container">
+    <div class="ventana-emergente" id="cleanVentanaEmergente">
+        <div class="contenido-ventana">
+          <h1>Chip set y aplicaciones</h1>
+
+          <h3><a href="#chip_set">3.1 Chip set</a></h3>
+      
+          <h3><a href="#unidad_procesamiento">3.1.1 Unidad de procesamiento</a></h3>
+                
+          <h3><a href="#controlador_bus">3.1.2 Controlador del Bus</a></h3>
+                
+          <h3><a href="#puertas_entrada_salida">3.1.3 Puertas de Entrada/Salida</a></h3>
+                
+          <h3><a href="#controlador_interrupciones">3.1.4 Controlador de interrupciones</a></h3>
+                
+          <h3><a href="#controlador_acceso_directo_memoria">3.1.5 Controlador de acceso directo a memoria</a></h3>
+                
+          <h3><a href="#circuitos_temporizacion">3.1.6 Circuitos de temporización</a></h3>
+                
+          <h3><a href="#circuitos_control">3.1.7 Circuitos de control</a></h3>
+                
+          <h3><a href="#controladores_video">3.1.8 Controladores de video</a></h3>
+                
+          <h3><a href="#aplicaciones">3.2 Aplicaciones</a></h3>
+                
+          <h3><a href="#entrada_salida">3.2.1 Entrada/Salida</a></h3>
+                
+          <h3><a href="#almacenamiento">3.2.2 Almacenamiento</a></h3>
+                
+          <h3><a href="#fuentes_alimentacion">3.2.3 Fuentes de alimentación</a></h3>
+                
+          <h3><a href="#ambientes_servicio">3.3 Ambientes de servicio</a></h3>
+                
+          <h3><a href="#negocios">3.3.1 Negocios</a></h3>
+                
+          <h3><a href="#industria">3.3.2 Industria</a></h3>
+                
+          <h3><a href="#comercio_electronico">3.3.3 Comercio electrónico</a></h3>
+          
+
+          <!-- Contenido de las secciones -->
+      
+          <h2 id="chip_set">3.1 Chip set</h2>
+          <p>El conjunto de chips, o chipset, es un grupo de circuitos integrados diseñados para trabajar juntos y gestionar el flujo de datos entre los componentes de una computadora. Este conjunto incluye varios controladores y procesadores que permiten que la CPU, la memoria y los dispositivos periféricos funcionen de manera coordinada y eficiente. Los chipsets son esenciales para la funcionalidad del hardware y desempeñan un papel crucial en la determinación del rendimiento y la compatibilidad del sistema.</p>
+          
+          <h3 id="unidad_procesamiento">3.1.1 Unidad de procesamiento</h3>
+          <p>La unidad de procesamiento en un chipset se refiere principalmente a la CPU (Unidad Central de Procesamiento) y otros procesadores auxiliares que pueden estar integrados en el chipset. La CPU es responsable de ejecutar instrucciones y realizar cálculos necesarios para el funcionamiento del sistema. Los chipsets modernos pueden incluir unidades adicionales como GPUs integradas (Unidades de Procesamiento Gráfico) que ayudan en tareas específicas como el procesamiento gráfico, liberando a la CPU para otras funciones.</p>
+          
+          <h3 id="controlador_bus">3.1.2 Controlador del Bus</h3>
+          <p>El controlador del bus es un componente crucial dentro del chipset que gestiona la comunicación entre la CPU, la memoria y los dispositivos periféricos. Este controlador coordina el tráfico de datos a través de los diferentes buses del sistema, asegurando que la información se transfiera de manera eficiente y sin conflictos. Los controladores del bus también pueden implementar técnicas para optimizar el uso del ancho de banda disponible y reducir la latencia en la comunicación entre componentes.</p>
+          
+          <h3 id="puertas_entrada_salida">3.1.3 Puertas de Entrada/Salida</h3>
+          <p>Las puertas de entrada/salida (E/S) en un chipset son interfaces que permiten la comunicación entre la computadora y los dispositivos externos, como teclados, ratones, impresoras y unidades de almacenamiento externas. Estas puertas pueden incluir puertos USB, HDMI, Ethernet y otros. Las puertas de E/S son gestionadas por controladores específicos dentro del chipset que regulan el flujo de datos y aseguran la correcta interacción con el sistema operativo y las aplicaciones.</p>
+          
+          <h3 id="controlador_interrupciones">3.1.4 Controlador de interrupciones</h3>
+          <p>El controlador de interrupciones es un componente del chipset que gestiona las señales de interrupción enviadas por los dispositivos de hardware. Cuando un dispositivo necesita la atención de la CPU, envía una señal de interrupción al controlador, que a su vez prioriza y envía la señal a la CPU. Esto permite que la CPU responda rápidamente a eventos críticos, mejorando la eficiencia del sistema y la capacidad de respuesta a las entradas del usuario y otros eventos externos.</p>
+          
+          <h3 id="controlador_acceso_directo_memoria">3.1.5 Controlador de acceso directo a memoria</h3>
+          <p>El controlador de acceso directo a memoria (DMA) permite que los dispositivos periféricos transfieran datos directamente a la memoria principal sin la intervención constante de la CPU. Esto libera a la CPU para realizar otras tareas mientras se realizan las transferencias de datos, mejorando el rendimiento y la eficiencia del sistema. El controlador DMA es esencial para operaciones de E/S intensivas, como la transferencia de grandes archivos o el streaming de video.</p>
+          
+          <h3 id="circuitos_temporizacion">3.1.6 Circuitos de temporización</h3>
+          <p>Los circuitos de temporización en un chipset proporcionan las señales de reloj necesarias para sincronizar las operaciones de todos los componentes del sistema. Estos circuitos aseguran que la CPU, la memoria y los dispositivos periféricos funcionen en armonía, siguiendo un ritmo coordinado que maximiza la eficiencia y evita conflictos en la transferencia de datos. Los circuitos de temporización son fundamentales para el correcto funcionamiento del hardware, garantizando que todas las partes del sistema trabajen juntas de manera sincronizada.</p>
+          
+          <h3 id="circuitos_control">3.1.7 Circuitos de control</h3>
+          <p>Los circuitos de control en un chipset regulan y coordinan las operaciones de los diferentes componentes del sistema. Estos circuitos manejan funciones esenciales como la administración de energía, la gestión de la temperatura y la configuración de los dispositivos periféricos. Los circuitos de control son responsables de iniciar y detener dispositivos, ajustar parámetros operativos y asegurar que el sistema funcione de manera estable y eficiente en todo momento.</p>
+          
+          <h3 id="controladores_video">3.1.8 Controladores de video</h3>
+          <p>Los controladores de video en un chipset son responsables de gestionar la salida de video al monitor. Estos controladores pueden estar integrados en la GPU o ser parte del chipset principal, y manejan tareas como el procesamiento de gráficos, la aceleración de video y la comunicación con pantallas de diferentes resoluciones y frecuencias de actualización. Los controladores de video son cruciales para asegurar una representación visual suave y precisa, especialmente en aplicaciones gráficamente intensivas como juegos y diseño gráfico.</p>
+          
+          <h2 id="aplicaciones">3.2 Aplicaciones</h2>
+          <p>Las aplicaciones de los chipsets abarcan una amplia gama de áreas en informática, desde el manejo básico de computadoras personales hasta sistemas complejos en entornos empresariales e industriales. Los chipsets permiten la integración y el funcionamiento eficiente de hardware y software, facilitando tareas que van desde el procesamiento de datos y almacenamiento hasta la comunicación y el control de dispositivos externos.</p>
+          
+          <h3 id="entrada_salida">3.2.1 Entrada/Salida</h3>
+          <p>En el ámbito de la entrada/salida, los chipsets gestionan la interacción entre la computadora y los dispositivos externos. Esto incluye la transmisión de datos a periféricos como teclados, ratones, impresoras y discos duros externos, así como la recepción de datos desde estos dispositivos. La eficiencia y la velocidad de estas operaciones son cruciales para la experiencia del usuario y el rendimiento del sistema.</p>
+          
+          <h3 id="almacenamiento">3.2.2 Almacenamiento</h3>
+          <p>Los chipsets juegan un papel crucial en la gestión del almacenamiento, controlando el acceso a discos duros, SSDs y otros dispositivos de almacenamiento. Estos chipsets manejan la lectura y escritura de datos, la organización de los archivos y la comunicación con la CPU y la memoria principal. Una gestión eficiente del almacenamiento es esencial para el rendimiento del sistema, especialmente en aplicaciones que requieren acceso rápido y frecuente a grandes cantidades de datos.</p>
+          
+          <h3 id="fuentes_alimentacion">3.2.3 Fuentes de alimentación</h3>
+          <p>Los chipsets también gestionan las fuentes de alimentación del sistema, asegurando que todos los componentes reciban el voltaje y la corriente adecuados para su funcionamiento. Esto incluye la administración de energía para optimizar el consumo, prolongar la vida útil de la batería en dispositivos portátiles y reducir el calor generado por el hardware. Los circuitos de control de energía dentro del chipset pueden ajustar dinámicamente el consumo de energía según las necesidades operativas del sistema.</p>
+          
+          <h2 id="ambientes_servicio">3.3 Ambientes de servicio</h2>
+          <p>Los chipsets son utilizados en una variedad de ambientes de servicio, desde entornos empresariales hasta aplicaciones industriales y de comercio electrónico. Cada uno de estos entornos presenta requisitos específicos en términos de rendimiento, confiabilidad y capacidad de manejo de datos, y los chipsets están diseñados para satisfacer estas necesidades.</p>
+          
+          <h3 id="negocios">3.3.1 Negocios</h3>
+          <p>En el entorno empresarial, los chipsets son fundamentales para el funcionamiento de servidores, estaciones de trabajo y otros equipos de oficina. Estos chipsets deben ser capaces de manejar grandes volúmenes de datos, proporcionar seguridad robusta y garantizar la alta disponibilidad y fiabilidad del sistema. La eficiencia en la gestión de recursos y la capacidad de escalar según las necesidades empresariales son cruciales.</p>
+          
+          <h3 id="industria">3.3.2 Industria</h3>
+          <p>En aplicaciones industriales, los chipsets se utilizan en sistemas de control y automatización, donde la precisión y la fiabilidad son esenciales. Estos sistemas deben operar en condiciones adversas y gestionar una variedad de dispositivos y sensores. Los chipsets industriales están diseñados para ofrecer robustez y estabilidad, permitiendo un control preciso y en tiempo real de los procesos industriales.</p>
+          
+          <h3 id="comercio_electronico">3.3.3 Comercio electrónico</h3>
+          <p>En el ámbito del comercio electrónico, los chipsets soportan la infraestructura tecnológica que permite las transacciones en línea. Esto incluye servidores que manejan grandes volúmenes de tráfico web, sistemas de procesamiento de pagos y bases de datos que almacenan información de clientes y productos. La seguridad, la velocidad de procesamiento y la capacidad de manejar altos niveles de concurrencia son aspectos críticos para los chipsets utilizados en estas aplicaciones.</p>
+      
+          <button class="close-button">Cerrar</button>
+        </div>
+    </div>
+</div>
+
+<div class="ventana-emergente-container">
+    <div class="ventana-emergente" id="customizeVentanaEmergente">
+        <div class="contenido-ventana">
+          <h1>Aspectos básicos de la computación paralela</h1>
+
+          <h3><a href="#computacion_paralela">4.1 Aspectos básicos de la computación paralela</a></h3>
+
+          <h3><a href="#tipos_computacion_paralela">4.2 Tipos de computación paralela</a></h3>
+          
+          <h3><a href="#clasificacion">4.2.1 Clasificación</a></h3>
+          
+          <h3><a href="#arquitectura_secuenciales">4.2.2 Arquitectura de computadores secuenciales</a></h3>
+          
+          <h3><a href="#organizacion_memoria">4.2.3 Organización de direcciones de memoria</a></h3>
+          
+          <h3><a href="#sistema_memoria_compartida">4.3 Sistema de memoria compartida</a></h3>
+          
+          <h3><a href="#redes_compartida">4.3.1 Redes de medio compartida</a></h3>
+          
+          <h3><a href="#redes_conmutadas">4.3.2 Redes conmutadas</a></h3>
+          
+          <h3><a href="#sistema_memoria_construida">4.4 Sistemas de memoria construida</a></h3>
+          
+          <h3><a href="#casos_estudio">4.5 Casos de estudio</a></h3>
+          
+
+    <!-- Contenido de las secciones -->
+
+    <h2 id="computacion_paralela">4.1 Aspectos básicos de la computación paralela</h2>
+    <p>La computación paralela es un paradigma de programación donde múltiples tareas se ejecutan simultáneamente para resolver un problema. En contraste con la computación secuencial, donde las tareas se realizan una tras otra, la computación paralela aprovecha la capacidad de procesamiento de múltiples unidades de procesamiento para acelerar la ejecución de programas. Esto se logra dividiendo el problema en partes más pequeñas y ejecutándolas simultáneamente en diferentes núcleos de procesamiento.</p>
+    <h2 id="tipos_computacion_paralela">4.2 Tipos de computación paralela</h2>
+    <p>Existen varios tipos de computación paralela, cada uno con sus propias características y aplicaciones específicas:</p>
+    <ul>
+        <li><strong>Computación en hilos:</strong> En este enfoque, las tareas se dividen en subprocesos o hilos que se ejecutan de manera independiente en paralelo.</li>
+        <li><strong>Computación en memoria compartida:</strong> Aquí, múltiples procesadores comparten un espacio de memoria común, lo que les permite acceder y compartir datos de manera eficiente.</li>
+        <li><strong>Computación en memoria distribuida:</strong> Los procesadores tienen su propia memoria local y se comunican a través de una red, lo que facilita la escalabilidad pero puede requerir una gestión más compleja de los datos.</li>
+        <li><strong>Computación en clústeres:</strong> Se utilizan múltiples sistemas independientes conectados en red para trabajar en conjunto en tareas específicas.</li>
+    </ul>
+    <h3 id="clasificacion">4.2.1 Clasificación</h3>
+    <p>La computación paralela se puede clasificar de varias formas, incluyendo la arquitectura de los sistemas, la forma en que se comparten los datos y la sincronización entre tareas. Esta clasificación ayuda a comprender mejor cómo se estructuran y operan los sistemas paralelos.</p>
+
+   
+<h3 id="arquitectura_secuenciales">4.2.2 Arquitectura de computadores secuenciales</h3>
+<p>La arquitectura de computadores secuenciales es un diseño de hardware donde las instrucciones se ejecutan de manera secuencial, una después de la otra, utilizando un solo núcleo de procesamiento. En este tipo de arquitectura, las instrucciones se ejecutan en orden y no pueden realizarse simultáneamente. Aunque este enfoque es sencillo y fácil de entender, puede limitar el rendimiento en comparación con la computación paralela, especialmente en tareas que pueden beneficiarse de la ejecución simultánea de múltiples instrucciones.</p>
+<h3 id="organizacion_memoria">4.2.3 Organización de direcciones de memoria</h3>
+<p>La organización de direcciones de memoria es un aspecto fundamental en la arquitectura de los sistemas informáticos. Define cómo se direccionan y acceden a los datos almacenados en la memoria del sistema. En sistemas de memoria compartida, todos los procesadores tienen acceso directo a un espacio de memoria compartido, lo que facilita el intercambio de datos entre ellos. Sin embargo, en sistemas de memoria distribuida, cada procesador tiene su propia memoria local y necesita comunicarse a través de la red para acceder a los datos almacenados en otros nodos.</p>
+<h2 id="sistema_memoria_compartida">4.3 Sistema de memoria compartida</h2>
+<p>En un sistema de memoria compartida, múltiples procesadores tienen acceso a una misma área de memoria central. Esto permite que los procesadores compartan datos y se comuniquen entre sí de manera eficiente. La memoria compartida es fundamental para la computación paralela, ya que facilita la colaboración entre procesos y la sincronización de tareas.</p>
+
+<h3 id="redes_compartida">4.3.1 Redes de medio compartida</h3>
+<p>Las redes de medio compartida son un tipo de arquitectura de red donde múltiples dispositivos comparten un mismo canal de comunicación para enviar y recibir datos. Este enfoque se utiliza comúnmente en entornos donde se necesita una comunicación rápida y eficiente entre dispositivos, como en sistemas de memoria compartida. Sin embargo, las redes de medio compartida también pueden sufrir de congestión si muchos dispositivos intentan acceder al canal al mismo tiempo, lo que puede afectar el rendimiento del sistema.</p>
+<h3 id="redes_conmutadas">4.3.2 Redes conmutadas</h3>
+<p>Las redes conmutadas son un tipo de arquitectura de red donde los dispositivos están conectados a través de conmutadores, que establecen conexiones directas entre los dispositivos cuando se necesita transmitir datos. A diferencia de las redes de medio compartido, donde todos los dispositivos comparten un mismo canal de comunicación, en las redes conmutadas se crean conexiones dedicadas entre los dispositivos, lo que permite una comunicación más eficiente y segura. Este enfoque se utiliza en redes de área local (LAN) y en redes de área amplia (WAN), proporcionando un alto rendimiento y una mayor capacidad de escalabilidad.</p>
+
+<h2 id="sistema_memoria_construida">4.4 Sistemas de memoria construida</h2>
+<p>Los sistemas de memoria construida son sistemas informáticos que utilizan una arquitectura de memoria específicamente diseñada para satisfacer las necesidades de una aplicación o entorno particular. Estos sistemas pueden incluir memoria caché integrada en el procesador, módulos de memoria especializados o técnicas de gestión de memoria optimizadas para aplicaciones específicas. La construcción de sistemas de memoria a medida puede mejorar significativamente el rendimiento y la eficiencia de los sistemas informáticos al adaptar la arquitectura de memoria a los requisitos específicos de la carga de trabajo.</p>
+
+<h2 id="casos_estudio">4.5 Casos de estudio</h2>
+<p>Los casos de estudio son análisis detallados de implementaciones reales de sistemas de computación paralela en diversas aplicaciones y entornos. Estos casos proporcionan una visión práctica de cómo se utilizan los conceptos y técnicas de computación paralela para resolver problemas del mundo real. Al estudiar casos concretos, los investigadores y profesionales pueden aprender de las experiencias y mejores prácticas de otros proyectos, aplicando ese conocimiento para mejorar el diseño y la implementación de sistemas paralelos en sus propios proyectos.</p>
+
+          <button class="close-button">Cerrar</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="js/popup.js"></script>
+
+
+<footer>
+  <div class="container">
+    <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+      <h4>About Us</h4>
+      <p>En las entrañas del ciberespacio, AlejovarSite emerge como un oráculo de conocimiento, donde las corrientes del código se entrelazan con la astucia digital, revelando los misterios más profundos de la tecnología.
+      </p>
+      <div class="contact-info">
+        <ul>
+          <li><i class="fa fa-home fa"></i>Calle de las Sombras Ocultas, Número 13, Barrio del Misterio Eterno, Ciudad de la Penumbra Profunda. </li>
+          <li></i> Luis OsuSaensPonystan</li>
+          <li><i class="fa fa-phone fa"></i> +52 844 307 7805</li>
+          <li><i class="fa fa-envelope fa"></i> elmasmakiabelicoluissaensponystanosu@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+
+  
+
+  </div>
+</footer>
+
+<div class="sub-footer">
+  <div class="container">
+    <div class="social-icon">
+      <div class="col-md-4">
+        <ul class="social-network">
+          <li><a href="https://www.facebook.com/yosoyalvex" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/YoSoyAlvex" class="twitter tool-tip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/yosoyalvex/" class="instagram tool-tip" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.youtube.com/c/YoSoyAlvex" class="ytube tool-tip" title="You Tube"><i class="fa fa-youtube-play"></i></a></li>
+          <li><a href="#" class="twitch tool-tip" title="Twitch"><i class="fa fa-twitch"></i></a></li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-md-offset-4">
+      <div class="copyright">
+        &copy; YoSoyAlvex. All Rights Reserved.
+        <div class="credits">
+      
+          <a href="https://www.youtube.com/c/YoSoyAlvex">YoSoyAlvex</a> by <a href="https://www.youtube.com/c/YoSoyAlvex">YoSoyAlvex</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    wow = new WOW({}).init();
+  </script>
+
+</body>
+
+</html>
